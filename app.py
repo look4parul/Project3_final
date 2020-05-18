@@ -1099,7 +1099,8 @@ def profile():
 # Method to gget the recommendation list of items similar to food items in advanced search
 # filepath = "/db/nutrition.csv"
 df = pd.read_csv("db/nutrition.csv")
-print("Nutrition data is: ", df.head())
+print("Nutrition data is: ")
+print(df.head())
 X_text = df["Shrt_Desc"].values
 cv = make_pipeline(
 CountVectorizer(
